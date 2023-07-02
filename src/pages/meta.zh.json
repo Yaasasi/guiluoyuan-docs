@@ -1,0 +1,14 @@
+{
+  "index": {
+    "title": "首页",
+    "type": "page"
+  },
+  "docs": {
+    "title": "文档",
+    "type": "page"
+  },
+  "link": {
+    "title": "链接",
+    "type": "page"
+  }
+}
