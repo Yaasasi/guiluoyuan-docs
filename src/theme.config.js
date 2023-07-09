@@ -10,7 +10,7 @@ export default {
   projectLink: 'https://github.com/Yaasasi/guiluoyuan-docs',
   docsRepositoryBase:
     'https://github.com/Yaasasi/guiluoyuan-docs/tree/main/src/pages',
-  titleSuffix: ' · 归落原',
+  titleSuffix: '',
   logo: <Logo />,
   head: (
     <>
