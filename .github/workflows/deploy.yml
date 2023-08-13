@@ -54,4 +54,5 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           EXCLUDE: node_modules/
           TARGET: ${{ secrets.TARGET }}
+          SCRIPT_BEFORE: ${{ secrets.SCRIPT_BEFORE }}
           SCRIPT_AFTER: ${{ secrets.SCRIPT_AFTER }}
