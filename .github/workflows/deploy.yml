@@ -54,5 +54,9 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           EXCLUDE: node_modules/
           TARGET: ${{ secrets.TARGET }}
-          SCRIPT_BEFORE: ${{ secrets.SCRIPT_BEFORE }}
-          SCRIPT_AFTER: ${{ secrets.SCRIPT_AFTER }}
+          SCRIPT_BEFORE: |
+            sudo systemctl stop guiluoyuan-docs.service
+          SCRIPT_AFTER: |
+            cd /opt/guiluoyuan-docs
+            pnpm install
+            sudo systemctl start guiluoyuan-docs.service
