@@ -6,8 +6,8 @@ export default {
     { locale: 'en', text: 'English' },
     { locale: 'zh', text: '中文' }
   ],
-  github: 'https://github.com/Yaasasi/guiluoyuan-docs',
-  projectLink: 'https://github.com/Yaasasi/guiluoyuan-docs',
+  github: false,
+  projectLink: false,
   docsRepositoryBase:
     'https://github.com/Yaasasi/guiluoyuan-docs/tree/main/src/pages',
   titleSuffix: '',
@@ -29,8 +29,8 @@ export default {
   search: true,
   font: false,
   unstable_flexsearch: true,
-  prevLinks: true,
-  nextLinks: true,
+  prevLinks: false,
+  nextLinks: false,
   floatTOC: true,
   footer: true,
   defaultMenuCollapsed: true,
