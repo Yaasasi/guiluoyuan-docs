@@ -14,5 +14,9 @@
   "link": {
     "title": "Link",
     "type": "page"
+  },
+  "about": {
+    "title": "About",
+    "type": "page"
   }
 }

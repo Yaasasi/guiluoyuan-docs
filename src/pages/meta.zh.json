@@ -14,5 +14,9 @@
   "link": {
     "title": "链接",
     "type": "page"
+  },
+  "about": {
+    "title": "关于",
+    "type": "page"
   }
 }
