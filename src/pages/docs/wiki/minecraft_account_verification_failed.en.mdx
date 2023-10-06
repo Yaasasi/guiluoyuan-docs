@@ -15,24 +15,42 @@ import Callout from 'nextra-theme-docs/callout'
 
 ## 前言
 
-自 2023 年 10 月 01 日 00:00 起全国多地玩家无法连接到 Minecraft 账户验证服务器，并且无法正常验证账户、获取皮肤披风等资源以及登录开启正版验证的服务器。
+您在开启 Minecraft 之旅时可能会遇到无法验证 Minecraft 正版账户的情况，您可参照此方案解决这个问题。
 
-目前我们已知受到影响的，与 Minecraft 有关联的域名：
-
-- api.minecraftservices.com
-- sessionserver.mojang.com
-- api.mojang.com
-- ...
-
-全国多个地区访问上述域名受到不同程度的 DNS 污染或劫持，包含多个网络运营商（中国移动、中国联通），您可能还会遇到转跳到反诈中心网页的情况。\
-目前明面上的原因是被国家反诈中心判定为诈骗网站，对于此事，我们建议您持续观望，切勿加入网络舆论。
+> 自 2023 年 10 月 01 日 00:00 起全国多地玩家无法连接到 Minecraft 账户验证服务器，并且无法正常验证账户、获取皮肤披风等资源以及登录开启正版验证的服务器。
+> 
+> 目前我们已知受到影响的，与 Minecraft 有关联的域名：
+> 
+> - api.minecraftservices.com
+> - sessionserver.mojang.com
+> - api.mojang.com
+> - ...
+> 
+> 全国多个地区访问上述域名受到不同程度的 DNS 污染或劫持，包含多个网络运营商（中国移动、中国联通），您可能还会遇到转跳到反诈中心网页的情况。\
+> 目前明面上的原因是被国家反诈中心判定为诈骗网站，对于此事，我们建议您持续观望，切勿加入网络舆论。
 
 
 ## 解决方法
 
 ### 修改系统 Hosts 文件
 
-以目前的状况来看失效，如果您实在想要尝试，请通过搜索引擎获得修改方式。
+您可以通过修改系统 Hosts 文件，来实现正常访问（仅限 DNS 污染情况）到受影响的 Minecraft 服务，这里我们以 Windows 11 为例：
+
+1. 打开文件资源管理器，在地址栏中键入 `C:\windows\system32\drivers\etc` ，打开如下图所示文件夹。
+
+   ![位置示例](../_images/wiki/minecraft_account_verification_failed/hosts.png)
+
+2. 右键 `hosto` 文件，在右键菜单中选择 `打开方式` ，在选择菜单中选择 `记事本`（或您喜爱的文本编辑软件），点击 `仅一次` 以编辑 hosts 文件。
+
+3. 在 hosts 文件的最后一行，`回车` 一次另起一行，键入以下内容：
+
+```
+13.107.213.50 sessionserver.mojang.com
+13.226.120.76 authserver.mojang.com
+13.107.213.50 minecraftservices.com
+```
+
+4. 单击左上角的 `文件` ，选择 `保存` ，关闭记事本，启动 Minecraft 开始游戏即可。
 
 ### 使用游戏加速器
 
@@ -106,5 +124,4 @@ import Callout from 'nextra-theme-docs/callout'
 
 ### 使用 steamcommunity 302
 
-steamcommunity 302 在 V12.1.29 版本新增了修复我的世界部分服务的模式，您可尝试使用。\
-steamcommunity 302 原帖：[https://www.dogfight360.com/blog/686/](https://www.dogfight360.com/blog/686/)
+第三方软件 [steamcommunity 302](https://www.dogfight360.com/blog/686/) 在 V12.1.29 版中本新增了修复我的世界部分服务的模式，您可尝试使用。
