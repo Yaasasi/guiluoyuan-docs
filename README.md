@@ -1,6 +1,6 @@
-# guiluo.yaasasi.cn
+# www.our.moe
 
-The GuiLuoYuan website.
+The Ourmoe website.
 
 ## Local Development
 

@@ -35,5 +35,5 @@ export default {
   footer: true,
   defaultMenuCollapsed: true,
   footerEditLink: ({ locale }) => locale === 'zh' ? '前往 GitHub 编辑此页' : 'Edit this page on GitHub',
-  footerText: <>Copyright © GuiLuoYuan Creativity Team 2018-{new Date().getFullYear()}</>
+  footerText: <>Copyright © Ourmoe Creativity Team 2018-{new Date().getFullYear()}</>
 }
