@@ -1,5 +1,6 @@
 {
   "contents": "目录",
-  "server_operation": "社区服务器运营公告",
+  "service_maintenance": "社区服务维护公告",
+  "service_operation": "社区服务运营公告",
   "community_event": "社区活动公告"
 }

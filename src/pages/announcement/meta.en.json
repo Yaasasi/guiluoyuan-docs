@@ -1,5 +1,6 @@
 {
   "contents": "Contents",
-  "server_operation": "Community Server Operation Announcement",
+  "service_maintenance": "Community Service Maintenance Announcement",
+  "service_operation": "Community Service Operation Announcement",
   "community_event": "Community Event Announcement"
 }
