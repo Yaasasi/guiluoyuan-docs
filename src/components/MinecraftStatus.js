@@ -8,6 +8,7 @@ export default function MinecraftStatus({ server = "hypixel.net" }) {
     loading: true,
     online: false,
     players: null,
+    maxPlayers: null,
     error: null,
   });
 
@@ -31,6 +32,7 @@ export default function MinecraftStatus({ server = "hypixel.net" }) {
           loading: false,
           online: !!obj.online,
           players: typeof obj.players === "number" ? obj.players : null,
+          maxPlayers: typeof obj.max_players === "number" ? obj.max_players : null,
           error: null,
         });
       } catch (e) {
@@ -39,6 +41,7 @@ export default function MinecraftStatus({ server = "hypixel.net" }) {
             loading: false,
             online: false,
             players: null,
+            maxPlayers: null,
             error: e?.message || "Fetch failed",
           });
         }
@@ -68,6 +71,15 @@ export default function MinecraftStatus({ server = "hypixel.net" }) {
   const badgeBg = state.error ? "#fff2f0" : state.online ? "#f6ffed" : "#fff2f0";
   const badgeBd = state.error ? "#ffccc7" : state.online ? "#b7eb8f" : "#ffccc7";
   const badgeFg = state.error ? "#a8071a" : state.online ? "#237804" : "#a8071a";
+
+  const playersText =
+    state.loading || state.error
+      ? "—"
+      : state.players == null
+      ? "N/A"
+      : state.maxPlayers == null
+      ? String(state.players)
+      : `${state.players} / ${state.maxPlayers}`;
 
   return (
     <div
@@ -99,7 +111,7 @@ export default function MinecraftStatus({ server = "hypixel.net" }) {
       <span style={{ opacity: 0.7 }}>{server}</span>
 
       <span style={{ fontWeight: 800 }}>Players:</span>
-      <span>{state.loading || state.error ? "—" : state.players}</span>
+      <span>{playersText}</span>
     </div>
   );
 }
