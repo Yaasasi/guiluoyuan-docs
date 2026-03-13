@@ -2,17 +2,23 @@
 
 ## 本地开发
 
+首次运行请先安装依赖：
+
 ```bash
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 访问 `http://localhost:3000`，将自动跳转到 `http://localhost:3000/zh`。
 
 ## 生产构建
 
+首次运行请先安装依赖：
+
 ```bash
-npm run build
-npm run start
+pnpm install
+pnpm build
+pnpm start
 ```
 
 `build` 后会自动执行 `postbuild`，在 `public/_pagefind` 生成全文搜索索引。
