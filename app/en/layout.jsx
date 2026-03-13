@@ -6,21 +6,16 @@ const I18N = [
   { locale: 'en', name: 'English' }
 ]
 
-const HOME_THEME = {
-  layout: 'full',
-  sidebar: false,
-  pagination: false,
-  timestamp: false,
-  toc: false
-}
-
 const pageMap = [
   {
     data: {
       index: {
         title: 'Home',
-        type: 'page',
-        theme: HOME_THEME
+        type: 'page'
+      },
+      'covenant': {
+        title: 'Covenant',
+        type: 'page'
       },
       'getting-started': {
         title: 'Getting Started',
@@ -34,10 +29,28 @@ const pageMap = [
     frontMatter: {
       title: 'Home',
       search: false,
-      theme: HOME_THEME,
+      theme: {
+        layout: 'full',
+        sidebar: false,
+        pagination: false,
+        timestamp: false,
+        toc: false
+      },
       filePath: 'app/en/index.mdx'
     },
     title: 'Home'
+  },
+  {
+    name: 'covenant',
+    route: '/en/covenant',
+    frontMatter: {
+      title: 'Covenant',
+      theme: {
+        timestamp: false
+      },
+      filePath: 'app/en/covenant/page.mdx'
+    },
+    title: 'Covenant'
   },
   {
     name: 'getting-started',

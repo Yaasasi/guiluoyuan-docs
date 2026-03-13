@@ -2,13 +2,10 @@ export default {
   index: {
     title: '首页',
     type: 'page',
-    theme: {
-      layout: 'full',
-      sidebar: false,
-      pagination: false,
-      timestamp: false,
-      toc: false
-    }
+  },
+  'covenant': {
+    title: '公约',
+    type: 'page'
   },
   'getting-started': {
     title: '快速开始',

@@ -1,14 +1,11 @@
 export default {
   index: {
     title: 'Home',
-    type: 'page',
-    theme: {
-      layout: 'full',
-      sidebar: false,
-      pagination: false,
-      timestamp: false,
-      toc: false
-    }
+    type: 'page'
+  },
+  'covenant': {
+    title: 'Covenant',
+    type: 'page'
   },
   'getting-started': {
     title: 'Getting Started',
