@@ -1,0 +1,37 @@
+---
+title: Home
+search: false
+---
+
+import Features from '../../components/Features'
+import MinecraftStatus from '../../components/MinecraftStatus'
+
+<h1 style={{ textAlign: 'center', fontWeight: 800, fontSize: '2.5rem', marginTop: '2rem', color: '#000000'  }}>Ourmoe</h1>
+
+<p style={{ textAlign: 'center', fontSize: '1.45rem', marginBottom: '0.35rem', marginTop: '2rem', color: '#4b5563' }}>（╹ڡ╹）Warmth, wonder, and us. ヾ(^▽^*)</p>
+
+<div>
+  <Features
+    items={[
+      'Community Rules ✨',
+      'Tutorials & Guides ⚡',
+      'Announcements 🪁',
+      'Public Information 📣'
+    ]}
+  />
+</div>
+
+<div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
+  <MinecraftStatus server="mc.our.moe" />
+  <div style={{ marginTop: '1.5rem' }}>
+    [Documentation](/docs/contents) · [Join Community](https://www.our.moe/join) · [About Us](/about/ourmoe) · [Sponsor Us](/about/sponsor)
+  </div>
+</div>
+
+<div style={{ display: 'flex', justifyContent: 'center', marginTop: '1.25rem', paddingInline: '0.75rem' }}>
+  <img
+    src="/images/avatar.png"
+    alt="big_Logo"
+    style={{ width: '100%', maxWidth: '780px', height: 'auto', display: 'block' }}
+  />
+</div>

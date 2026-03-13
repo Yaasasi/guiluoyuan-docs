@@ -1,0 +1,28 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.9rem 1.4rem;
+  margin: 2.25rem auto 1.75rem;
+  width: 100%;
+  max-width: 960px;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+
+.feature {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.6;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+@media (min-width: 1024px) {
+  .features {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
