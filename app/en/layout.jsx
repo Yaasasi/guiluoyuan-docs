@@ -2,7 +2,7 @@ import { Footer, Layout, Navbar } from 'nextra-theme-docs'
 import { Search } from 'nextra/components'
 
 const I18N = [
-  { locale: 'zh', name: '中文' },
+  { locale: 'zh', name: '简体中文' },
   { locale: 'en', name: 'English' }
 ]
 

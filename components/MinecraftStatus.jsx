@@ -94,7 +94,6 @@ export default function MinecraftStatus({ server = 'hypixel.net' }) {
         {badgeText}
       </span>
       <span style={{ opacity: 0.7 }}>{server}</span>
-      <span style={{ fontWeight: 800 }}>Players:</span>
       <span>{playersText}</span>
     </span>
   )
