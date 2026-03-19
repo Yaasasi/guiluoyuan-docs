@@ -1,7 +1,7 @@
 export default {
   index: {
     title: '首页',
-    type: 'page',
+    type: 'page'
   },
   'covenant': {
     title: '公约',

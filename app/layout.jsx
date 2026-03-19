@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="zh-CN" dir="ltr" suppressHydrationWarning>
-      <Head />
+      <Head color={{ hue: 212, saturation: 100 }} />
       <body>{children}</body>
     </html>
   )
