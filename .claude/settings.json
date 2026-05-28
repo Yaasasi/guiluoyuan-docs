@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "Read(//c/Users/YuXi/AppData/Local/Temp/tmp.rzNtDTQsPp/nextra/package/dist/server/**)",
+      "WebFetch(domain:the-guild.dev)",
+      "Read(//c/Users/YuXi/AppData/Local/Temp/tmp.rzNtDTQsPp/nextra/package/dist/client/components/**)",
+      "Bash(node)",
+      "Bash(pnpm install *)",
+      "Bash(pnpm build *)",
+      "Bash(python -)",
+      "Bash(pnpm dev *)",
+      "Bash(pnpm exec *)",
+      "Bash(powershell.exe -NoProfile -Command \"Get-CimInstance Win32_Process -Filter \\\\\"ProcessId=96208\\\\\" | Select-Object ProcessId,CommandLine | ConvertTo-Json -Compress\")",
+      "Bash(powershell.exe -NoProfile -Command \"Stop-Process -Id 96208\")"
+    ]
+  }
+}

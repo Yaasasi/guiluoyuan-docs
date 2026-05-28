@@ -1,4 +1,6 @@
-import { useRouter } from 'next/router'
+'use client'
+
+import { useParams } from 'next/navigation'
 import styles from './features.module.css'
 
 const featureTranslations = {
@@ -17,13 +19,15 @@ const featureTranslations = {
 }
 
 export default function Features() {
-  const { locale, defaultLocale } = useRouter()
+  const params = useParams()
+  const locale = params?.lang === 'en' ? 'en' : 'zh'
+  const translations = featureTranslations[locale]
 
   return (
     <div className={styles.features}>
       {['rulse', 'tutorials-guides', 'announcement', 'publicity-list'].map(feature => (
         <div key={feature} className={styles.feature}>
-          {featureTranslations[locale][feature] ?? featureTranslations[defaultLocale][feature]}
+          {translations[feature]}
         </div>
       ))}
     </div>

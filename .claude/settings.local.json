@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"c:/Users/YuXi/Documents/Ourmoe/guiluoyuan-docs\" log --oneline -5)",
+      "Bash(npm view *)",
+      "WebFetch(domain:nextra.site)"
+    ]
+  }
+}

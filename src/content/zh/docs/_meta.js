@@ -1,0 +1,9 @@
+const meta = {
+  "contents": "目录",
+  "treaty": "公约宣言",
+  "rules": "社区规则",
+  "list": "玩家名单",
+  "wiki": "知识锦囊"
+}
+
+export default meta

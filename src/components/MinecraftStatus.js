@@ -1,3 +1,5 @@
+"use client";
+
 // components/MinecraftStatus.js
 import { useEffect, useState } from "react";
 

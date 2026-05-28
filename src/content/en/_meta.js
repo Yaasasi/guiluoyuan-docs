@@ -1,0 +1,24 @@
+const meta = {
+  "index": {
+    "title": "Home",
+    "type": "page"
+  },
+  "announcement": {
+    "title": "Announcement",
+    "type": "page"
+  },
+  "docs": {
+    "title": "Docs",
+    "type": "page"
+  },
+  "link": {
+    "title": "Link",
+    "type": "page"
+  },
+  "about": {
+    "title": "About",
+    "type": "page"
+  }
+}
+
+export default meta

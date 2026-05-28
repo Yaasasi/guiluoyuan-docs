@@ -1,0 +1,11 @@
+const meta = {
+  "previous_playthrough": "Previous Playthrough",
+  "lifecycle_of_playthrough": "Life Cycle of Playthrough",
+  "losenone_previous_playthrough": "Losenone · Previous Playthrough",
+  "java_distribution_selection_guide_for_minecraft": "Java Distribution Selection Guide for Minecraft",
+  "minecraft_account_verification_failed": "Minecraft Account Verification Failed",
+  "teamspeak_user_guide": "TeamSpeak User Guide",
+  "losenone_skin_user_guide": "Losenone · Community Skin Server User Guide"
+}
+
+export default meta

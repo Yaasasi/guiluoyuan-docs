@@ -1,0 +1,9 @@
+const meta = {
+  "contents": "目录",
+  "service_maintenance": "社区服务维护公告",
+  "service_operation": "社区服务运营公告",
+  "community_event": "社区活动公告",
+  "production_progress": "项目开发进度"
+}
+
+export default meta

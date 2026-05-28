@@ -1,0 +1,9 @@
+const meta = {
+  "contents": "Contents",
+  "service_maintenance": "Community Service Maintenance Announcement",
+  "service_operation": "Community Service Operation Announcement",
+  "community_event": "Community Event Announcement",
+  "production_progress": "Project Production Progress"
+}
+
+export default meta

@@ -1,0 +1,10 @@
+const meta = {
+  "blacklist_minecraft": "Ourmoe - Blacklist / Minecraft",
+  "whitelist_minecraft": "Ourmoe - Whitelist / Minecraft",
+  "losenone_summerfestival_2025_participant_list": "Losenone - SummerFestival 2025 / Participant List",
+  "losenone_summerfestival_2023_staff_and_participant_list": "Losenone - SummerFestival 2023 / Staff & Participant List",
+  "losenone_summerfestival_2022_staff_and_participant_list": "Losenone - SummerFestival 2022 / Staff & Participant List",
+  "losenone_summerfestival_2021_staff_and_participant_list": "Losenone - SummerFestival 2021 / Staff & Participant List"
+}
+
+export default meta

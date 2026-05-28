@@ -1,3 +1,5 @@
+'use client'
+
 // Referenced from Vercel's SWR documentation website:
 // https://github.com/vercel/swr-site/blob/13a748db1a3cca4d4aa4b1743bd4602b5d2c46eb/components/video.js
 import { useRef, useCallback, useEffect } from 'react'

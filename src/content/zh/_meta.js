@@ -1,0 +1,24 @@
+const meta = {
+  "index": {
+    "title": "首页",
+    "type": "page"
+  },
+  "announcement": {
+    "title": "公告",
+    "type": "page"
+  },
+  "docs": {
+    "title": "文档",
+    "type": "page"
+  },
+  "link": {
+    "title": "链接",
+    "type": "page"
+  },
+  "about": {
+    "title": "关于",
+    "type": "page"
+  }
+}
+
+export default meta

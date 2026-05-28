@@ -1,0 +1,7 @@
+const meta = {
+  "privacy_policy": "归落原隐私政策",
+  "allowed_modifications": "归落原三方模组使用规定 / Minecraft",
+  "losenone_community_management_regulations": "洛书南社区管理条例"
+}
+
+export default meta
